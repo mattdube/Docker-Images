@@ -1,6 +1,8 @@
 # Docker-Images
 Clone this repository to your local machine.
 
+The environment.yml file isn't used, but is included as a reference. 
+
 You need to have docker installed.
 You can build the image using this command from the new `Docker-Images` directory:
 
@@ -20,3 +22,4 @@ You can attach your local course files to your docker image, so when you run jup
 In this example, I have cloned the course repository into the projects folder of my home directory. I then attach that directory to the docker container. 
 
 `docker run -v /home/mattdube/projects/IntroductoryCourse:/home/jovyan/projects/IntroductoryCourse -it --rm -p 8888:8888 intuitive-bayes-3 start.sh jupyter lab`
+
