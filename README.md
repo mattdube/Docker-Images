@@ -23,3 +23,11 @@ In this example, I have cloned the course repository into the projects folder of
 
 `docker run -v /home/mattdube/projects/IntroductoryCourse:/home/jovyan/projects/IntroductoryCourse -it --rm -p 8888:8888 intuitive-bayes-3 start.sh jupyter lab`
 
+This has been tested on Pop_OS 21.04 and 21.10
+It should work fine under WSL 2 on Windows.
+
+To attach a windows directory under Windows 10/11 (not WSL) you should use:
+
+`docker run -it --volume //c/Users/matt/my_project:/home/project`
+
+where //c/ is the C drive of your windows install.
